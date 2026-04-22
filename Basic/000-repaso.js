@@ -113,6 +113,7 @@ console.log(newMyBigInt);
 */
 
 //--------------------------------------------------------------------------------------
+
 /*
 // 1. Crea una variable para cada operación aritmética
 let suma = 10 + 5
@@ -187,26 +188,139 @@ isStudent ? console.log("Es estudiante") : console.log("No es estudiante");
 const isTeacher = false
 isTeacher ? console.log("Es profesor") : console.log("no es profesor"); 
 */
+
 //-------------------------------------------------------------------------------------
 
+/*
 // 1. Concatena dos cadenas de texto
-
+let myName = "Randy"
+let cadena = "Hola " + myName
+console.log(cadena)
 // 2. Muestra la longitud de una cadena de texto
-
+console.log(cadena.length)
 // 3. Muestra el primer y último carácter de un string
-
+console.log(cadena[0])
+console.log(cadena[9])
 // 4. Convierte a mayúsculas y minúsculas un string
-
+console.log(cadena.toUpperCase())
+console.log(cadena.toLowerCase())
 // 5. Crea una cadena de texto en varias líneas
-
+let linea = `hola, este
+es una string con varias lineas`
+console.log(linea)
 // 6. Interpola el valor de una variable en un string
-
+let email = "randyruiz937@gmail.com"
+console.log(`Hola, ${myName}! Tu email es ${email}.`)
 // 7. Reemplaza todos los espacios en blanco de un string por guiones
-
+let cadenaConEspacios = "Hola, ¿cómo estás?";
+let cadenaSinEspacios = cadenaConEspacios.replace(/ /g, "-");
+console.log(cadenaSinEspacios)
 // 8. Comprueba si una cadena de texto contiene una palabra concreta
-
+let palabra = "como";
+console.log(palabra.includes("como")); // true
 // 9. Comprueba si dos strings son iguales
-
+let palabra1 = "hola"
+let palabra2 = "hola"
+console.log(palabra1 == palabra2)
 // 10. Comprueba si dos strings tienen la misma longitud
+let string4 = "Holaa";
+let string5 = "Adiós";
+console.log(string4.length === string5.length); // true
+*/
 
 //-------------------------------------------------------------------------------------
+
+/*
+// 1. Imprime por consola tu nombre si una variable toma su valor
+let nombre = "Randy"
+if (nombre) {
+    console.log(nombre);
+}
+// 2. Imprime por consola un mensaje si el usuario y contraseña concide con unos establecidos
+let usuario = "Randy"
+let contraseña = "123"
+if (usuario === "Randy" && contraseña === "123") {
+    console.log("Felicidades");
+}
+// 3. Verifica si un número es positivo, negativo o cero e imprime un mensaje
+    let numeroPositivo = -3
+    if (numeroPositivo > 0) {
+        console.log("El numero es positivo");
+    } else {
+        console.log("El numero es negativo");
+    }
+// 4. Verifica si una persona puede votar o no (mayor o igual a 18) e indica cuántos años le faltan
+let persona = 15
+if (persona >= 18) {
+    console.log("Eres mayor de edad, puedes votar");
+} else {
+    console.log("Eres menor de edad, no puedes votar, Te faltan: " + (18 - persona) + " años.");
+}
+// 5. Usa el operador ternario para asignar el valor "adulto" o "menor" a una variable
+//    dependiendo de la edad 
+const adulto = persona >= 18 ? "Adulto" : "menor"
+console.log("La persona es: " + adulto)
+// 6. Muestra en que estación del año nos encontramos dependiendo del valor de una variable "mes"
+let mes = 6;
+switch (mes) {
+    case 12:
+    case 1:
+    case 2:
+        console.log("Estamos en invierno.");
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log("Estamos en primavera.");
+        break;
+    case 6:
+    case 7:
+    case 8:
+        console.log("Estamos en verano.");
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log("Estamos en otoño.");
+        break;
+    default:
+        console.log("Mes inválido.");
+}
+// 7. Muestra el número de días que tiene un mes dependiendo de la variable del ejercicio anterior
+switch (mes) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        console.log("El mes tiene 31 días.");
+        break;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        console.log("El mes tiene 30 días.");
+        break;
+    case 2:
+        console.log("El mes tiene 28 días (o 29 en año bisiesto).");
+        break;
+    default:
+        console.log("Mes inválido.");
+}
+// 8. Usa un switch para imprimir un mensaje de saludo diferente dependiendo del idioma
+let idioma = "es";
+switch (idioma) {
+    case "es":
+        console.log("Hola!");
+        break;
+    case "en":
+        console.log("Hello!");
+        break;
+        default:
+        console.log("Idioma no reconocido.");
+}
+*/
+
+//-------------------------------------------------------------------------------------------------
